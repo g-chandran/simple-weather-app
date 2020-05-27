@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'locator.dart';
+import 'ui/views/home_view.dart';
 
 void main() {
   setupLocator();
@@ -10,6 +11,8 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: SafeArea(child: HomeView()),
+    );
   }
 }

@@ -1,7 +1,9 @@
-import 'package:clima_two/core/models/home.dart';
-import 'package:http/http.dart' as http;
 import 'dart:convert';
+
+import 'package:http/http.dart' as http;
+
 import '../../confidentials.dart';
+import '../models/home.dart';
 
 class Api {
   static const String apiKey = Confidentials.apikey;
@@ -13,7 +15,8 @@ class Api {
     var response = await client.get('$endpoint?q=$city&appid=$apiKey');
 
     if (response.statusCode == 200) {
-      return Home.fromJson(map: json.decode(response.body));
+      var data = Home.fromJson(map: json.decode(response.body));
+      return data;
     }
   }
 }

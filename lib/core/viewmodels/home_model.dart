@@ -1,8 +1,9 @@
-import 'package:clima_two/core/enums/viewstates.dart';
-import 'package:clima_two/core/models/home.dart';
-import 'package:clima_two/core/services/api.dart';
-import 'package:clima_two/locator.dart';
 import 'package:flutter/foundation.dart';
+
+import '../../locator.dart';
+import '../enums/viewstates.dart';
+import '../models/home.dart';
+import '../services/api.dart';
 
 class HomeModel extends ChangeNotifier {
   ViewState _state = ViewState.Idle;
@@ -18,6 +19,6 @@ class HomeModel extends ChangeNotifier {
   Future getData(String city) async {
     setState(ViewState.Busy);
     data = await _api.getData(city);
-    setState(ViewState.Idle);
+    setState(ViewState.Display);
   }
 }
