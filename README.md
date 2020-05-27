@@ -1,6 +1,6 @@
 # Simple Weather App
 
-![Sample Video](https://gph.is/g/ZlRDqmk)
+![Sample Video](https://media.giphy.com/media/kgIGHP2uLSYloPzMAF/source.gif)
 
 This is a simple project to check the quality of [Open Weather Map API](https://home.openweathermap.org/) and to test Provider state management architecture.
 
