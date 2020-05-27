@@ -1,16 +1,10 @@
-# clima_two
+# Simple Weather App
 
-A new Flutter project.
+This is a simple project to check the quality of [Open Weather Map API](https://home.openweathermap.org/) and to test Provider state management architecture.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## To run this app
+- Download the repository
+- Open the project in your text editor, click on get packages or run 'flutter pub get' to get the packages.
+- Go to [Open Weather Map API](https://openweathermap.org/price#weather) and get your API key.
+- Create a file named `confidentials.dart` and inside the Confidentials class create a static const String and give your API key as the value.
+- Now, run the project using `flutter run`.
